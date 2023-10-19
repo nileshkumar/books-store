@@ -1,0 +1,1003 @@
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/messages" for 127.0.0.1 at 2023-10-09 00:30:21 +0200
+Processing by MessagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 1]]
+  Rendered messages/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 6544)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6603)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.8ms | Allocations: 9815)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2023-10-09 00:30:48 +0200
+Processing by MessagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 1]]
+  Rendered messages/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 6542)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 6601)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms | Allocations: 9813)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2023-10-09 00:31:23 +0200
+Processing by MessagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 1]]
+  Rendered messages/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 6546)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6605)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.9ms | Allocations: 9817)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:47:31.295832"], ["updated_at", "2023-10-08 22:47:31.295832"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 1]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:47:31.298381"], ["updated_at", "2023-10-08 22:47:31.298381"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 2]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 2]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:47:31.299201"], ["updated_at", "2023-10-08 22:47:31.299201"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 3]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 3]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order. I will in touch shortly after reviewing your treatment application."], ["outbox_id", 2], ["inbox_id", 1], ["created_at", "2023-10-08 22:47:31.303467"], ["updated_at", "2023-10-08 22:47:31.303467"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:49:44.935904"], ["updated_at", "2023-10-08 22:49:44.935904"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 1]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:49:44.939087"], ["updated_at", "2023-10-08 22:49:44.939087"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 2]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 2]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:49:44.940513"], ["updated_at", "2023-10-08 22:49:44.940513"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 3]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 3]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order. I will in touch shortly after reviewing your treatment application."], ["outbox_id", 2], ["inbox_id", 1], ["created_at", "2023-10-08 22:49:44.945978"], ["updated_at", "2023-10-08 22:49:44.945978"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:50:05.148085"], ["updated_at", "2023-10-08 22:50:05.148085"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.1ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:50:05.150275"], ["updated_at", "2023-10-08 22:50:05.150275"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:50:05.151473"], ["updated_at", "2023-10-08 22:50:05.151473"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order. I will in touch shortly after reviewing your treatment application."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 22:50:05.155611"], ["updated_at", "2023-10-08 22:50:05.155611"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:51:22.429318"], ["updated_at", "2023-10-08 22:51:22.429318"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:51:22.431637"], ["updated_at", "2023-10-08 22:51:22.431637"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:51:22.432347"], ["updated_at", "2023-10-08 22:51:22.432347"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order. I will in touch shortly after reviewing your treatment application."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 22:51:22.436391"], ["updated_at", "2023-10-08 22:51:22.436391"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:52:04.124897"], ["updated_at", "2023-10-08 22:52:04.124897"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:52:04.127698"], ["updated_at", "2023-10-08 22:52:04.127698"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:52:04.128582"], ["updated_at", "2023-10-08 22:52:04.128582"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order. I will in touch shortly after reviewing your treatment application."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 22:52:04.133138"], ["updated_at", "2023-10-08 22:52:04.133138"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:52:19.685386"], ["updated_at", "2023-10-08 22:52:19.685386"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.9ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:52:19.689089"], ["updated_at", "2023-10-08 22:52:19.689089"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:52:19.689926"], ["updated_at", "2023-10-08 22:52:19.689926"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order. I will in touch shortly after reviewing your treatment application."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 22:52:19.694576"], ["updated_at", "2023-10-08 22:52:19.694576"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:53:00.775405"], ["updated_at", "2023-10-08 22:53:00.775405"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:53:00.777919"], ["updated_at", "2023-10-08 22:53:00.777919"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:53:00.778828"], ["updated_at", "2023-10-08 22:53:00.778828"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order. I will in touch shortly after reviewing your treatment application."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 22:53:00.783109"], ["updated_at", "2023-10-08 22:53:00.783109"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:53:36.005181"], ["updated_at", "2023-10-08 22:53:36.005181"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:53:36.007279"], ["updated_at", "2023-10-08 22:53:36.007279"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:53:36.007954"], ["updated_at", "2023-10-08 22:53:36.007954"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order. I will in touch shortly after reviewing your treatment application."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 22:53:36.011647"], ["updated_at", "2023-10-08 22:53:36.011647"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:53:56.075203"], ["updated_at", "2023-10-08 22:53:56.075203"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:53:56.078626"], ["updated_at", "2023-10-08 22:53:56.078626"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:53:56.079563"], ["updated_at", "2023-10-08 22:53:56.079563"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order. I will in touch shortly after reviewing your treatment application."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 22:53:56.084358"], ["updated_at", "2023-10-08 22:53:56.084358"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:54:37.417182"], ["updated_at", "2023-10-08 22:54:37.417182"]]
+  [1m[36mInbox Create (0.2ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.3ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:54:37.420346"], ["updated_at", "2023-10-08 22:54:37.420346"]]
+  [1m[36mInbox Create (0.2ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:54:37.421589"], ["updated_at", "2023-10-08 22:54:37.421589"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 22:54:37.426428"], ["updated_at", "2023-10-08 22:54:37.426428"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:59:11.307297"], ["updated_at", "2023-10-08 22:59:11.307297"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:59:11.309817"], ["updated_at", "2023-10-08 22:59:11.309817"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:59:11.310550"], ["updated_at", "2023-10-08 22:59:11.310550"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 22:59:11.314827"], ["updated_at", "2023-10-08 22:59:11.314827"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 22:59:11.316806"], ["updated_at", "2023-10-08 22:59:11.316806"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 22:59:11.317768"], ["updated_at", "2023-10-08 22:59:11.317768"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 22:59:11.318522"], ["updated_at", "2023-10-08 22:59:11.318522"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 22:59:11.319275"], ["updated_at", "2023-10-08 22:59:11.319275"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:00:58.105468"], ["updated_at", "2023-10-08 23:00:58.105468"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:00:58.107992"], ["updated_at", "2023-10-08 23:00:58.107992"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:00:58.110468"], ["updated_at", "2023-10-08 23:00:58.110468"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:00:58.111523"], ["updated_at", "2023-10-08 23:00:58.111523"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:01:33.785470"], ["updated_at", "2023-10-08 23:01:33.785470"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.3ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:01:33.788683"], ["updated_at", "2023-10-08 23:01:33.788683"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:01:33.789752"], ["updated_at", "2023-10-08 23:01:33.789752"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:01:33.794547"], ["updated_at", "2023-10-08 23:01:33.794547"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:01:33.797136"], ["updated_at", "2023-10-08 23:01:33.797136"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:01:33.798558"], ["updated_at", "2023-10-08 23:01:33.798558"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:01:33.799439"], ["updated_at", "2023-10-08 23:01:33.799439"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:01:33.800294"], ["updated_at", "2023-10-08 23:01:33.800294"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:02:11.756717"], ["updated_at", "2023-10-08 23:02:11.756717"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:02:11.759392"], ["updated_at", "2023-10-08 23:02:11.759392"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:02:11.760256"], ["updated_at", "2023-10-08 23:02:11.760256"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:02:11.764586"], ["updated_at", "2023-10-08 23:02:11.764586"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:02:11.766658"], ["updated_at", "2023-10-08 23:02:11.766658"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:02:11.767682"], ["updated_at", "2023-10-08 23:02:11.767682"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:02:11.768460"], ["updated_at", "2023-10-08 23:02:11.768460"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:02:11.769119"], ["updated_at", "2023-10-08 23:02:11.769119"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? /* loading for inspect */ LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 11]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:02:40.065326"], ["updated_at", "2023-10-08 23:02:40.065326"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:02:40.068182"], ["updated_at", "2023-10-08 23:02:40.068182"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:02:40.069446"], ["updated_at", "2023-10-08 23:02:40.069446"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:02:40.073941"], ["updated_at", "2023-10-08 23:02:40.073941"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:02:40.076249"], ["updated_at", "2023-10-08 23:02:40.076249"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:02:40.077260"], ["updated_at", "2023-10-08 23:02:40.077260"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:02:40.078036"], ["updated_at", "2023-10-08 23:02:40.078036"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:02:40.078697"], ["updated_at", "2023-10-08 23:02:40.078697"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:04:58.641034"], ["updated_at", "2023-10-08 23:04:58.641034"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:04:58.643652"], ["updated_at", "2023-10-08 23:04:58.643652"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.1ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:04:58.644828"], ["updated_at", "2023-10-08 23:04:58.644828"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:04:58.649322"], ["updated_at", "2023-10-08 23:04:58.649322"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:04:58.652154"], ["updated_at", "2023-10-08 23:04:58.652154"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:04:58.653876"], ["updated_at", "2023-10-08 23:04:58.653876"]]
+  [1m[36mInbox Create (0.3ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:04:58.655792"], ["updated_at", "2023-10-08 23:04:58.655792"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:04:58.657082"], ["updated_at", "2023-10-08 23:04:58.657082"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.4ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.0ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:06:02.531137"], ["updated_at", "2023-10-08 23:06:02.531137"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.3ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:06:02.534420"], ["updated_at", "2023-10-08 23:06:02.534420"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.1ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:06:02.535740"], ["updated_at", "2023-10-08 23:06:02.535740"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:06:02.541297"], ["updated_at", "2023-10-08 23:06:02.541297"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:06:02.543916"], ["updated_at", "2023-10-08 23:06:02.543916"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:06:02.545036"], ["updated_at", "2023-10-08 23:06:02.545036"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:06:02.545852"], ["updated_at", "2023-10-08 23:06:02.545852"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:06:02.546559"], ["updated_at", "2023-10-08 23:06:02.546559"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.0ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? /* loading for inspect */ LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 11]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:06:19.603390"], ["updated_at", "2023-10-08 23:06:19.603390"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.3ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:06:19.608242"], ["updated_at", "2023-10-08 23:06:19.608242"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:06:19.609342"], ["updated_at", "2023-10-08 23:06:19.609342"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:06:19.613589"], ["updated_at", "2023-10-08 23:06:19.613589"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:06:19.615860"], ["updated_at", "2023-10-08 23:06:19.615860"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:06:19.617363"], ["updated_at", "2023-10-08 23:06:19.617363"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.1ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:06:19.618384"], ["updated_at", "2023-10-08 23:06:19.618384"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:06:19.619151"], ["updated_at", "2023-10-08 23:06:19.619151"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.0ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? /* loading for inspect */ LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? /* loading for inspect */ LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? /* loading for inspect */ LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ?[0m  [["is_patient", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:07:17.703686"], ["updated_at", "2023-10-08 23:07:17.703686"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:07:17.706842"], ["updated_at", "2023-10-08 23:07:17.706842"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:07:17.707711"], ["updated_at", "2023-10-08 23:07:17.707711"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:07:17.712101"], ["updated_at", "2023-10-08 23:07:17.712101"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:07:17.714252"], ["updated_at", "2023-10-08 23:07:17.714252"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:07:17.715321"], ["updated_at", "2023-10-08 23:07:17.715321"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:07:17.716136"], ["updated_at", "2023-10-08 23:07:17.716136"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:07:17.716832"], ["updated_at", "2023-10-08 23:07:17.716832"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.0ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? /* loading for inspect */ LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? /* loading for inspect */ LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? /* loading for inspect */ LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ?[0m  [["is_patient", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:07:57.435016"], ["updated_at", "2023-10-08 23:07:57.435016"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:07:57.437785"], ["updated_at", "2023-10-08 23:07:57.437785"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:07:57.438713"], ["updated_at", "2023-10-08 23:07:57.438713"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:07:57.443669"], ["updated_at", "2023-10-08 23:07:57.443669"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:07:57.446783"], ["updated_at", "2023-10-08 23:07:57.446783"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.1ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:07:57.448536"], ["updated_at", "2023-10-08 23:07:57.448536"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:07:57.449341"], ["updated_at", "2023-10-08 23:07:57.449341"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.1ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:07:57.450167"], ["updated_at", "2023-10-08 23:07:57.450167"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.0ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:09:24.735763"], ["updated_at", "2023-10-08 23:09:24.735763"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.3ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:09:24.738837"], ["updated_at", "2023-10-08 23:09:24.738837"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:09:24.739922"], ["updated_at", "2023-10-08 23:09:24.739922"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:09:24.744412"], ["updated_at", "2023-10-08 23:09:24.744412"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:09:24.747063"], ["updated_at", "2023-10-08 23:09:24.747063"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:09:24.748540"], ["updated_at", "2023-10-08 23:09:24.748540"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:09:24.749450"], ["updated_at", "2023-10-08 23:09:24.749450"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:09:24.750179"], ["updated_at", "2023-10-08 23:09:24.750179"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.0ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:09:24.756423"], ["updated_at", "2023-10-08 23:09:24.756423"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.1ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:09:24.757885"], ["updated_at", "2023-10-08 23:09:24.757885"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:09:24.758679"], ["updated_at", "2023-10-08 23:09:24.758679"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:09:24.759418"], ["updated_at", "2023-10-08 23:09:24.759418"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.0ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOutbox Load (0.0ms)[0m  [1m[34mSELECT "outboxes".* FROM "outboxes" WHERE "outboxes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_doctor" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["is_doctor", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:09:41.503592"], ["updated_at", "2023-10-08 23:09:41.503592"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:09:41.506218"], ["updated_at", "2023-10-08 23:09:41.506218"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:09:41.507099"], ["updated_at", "2023-10-08 23:09:41.507099"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:09:41.511219"], ["updated_at", "2023-10-08 23:09:41.511219"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:09:41.513298"], ["updated_at", "2023-10-08 23:09:41.513298"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:09:41.514316"], ["updated_at", "2023-10-08 23:09:41.514316"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:09:41.515095"], ["updated_at", "2023-10-08 23:09:41.515095"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.0ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:09:41.515752"], ["updated_at", "2023-10-08 23:09:41.515752"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:09:41.520532"], ["updated_at", "2023-10-08 23:09:41.520532"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:09:41.521572"], ["updated_at", "2023-10-08 23:09:41.521572"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:09:41.522378"], ["updated_at", "2023-10-08 23:09:41.522378"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:09:41.523082"], ["updated_at", "2023-10-08 23:09:41.523082"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOutbox Load (0.0ms)[0m  [1m[34mSELECT "outboxes".* FROM "outboxes" WHERE "outboxes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_doctor" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["is_doctor", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:13:22.725635"], ["updated_at", "2023-10-08 23:13:22.725635"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.2ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:13:22.728408"], ["updated_at", "2023-10-08 23:13:22.728408"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:13:22.729241"], ["updated_at", "2023-10-08 23:13:22.729241"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:13:22.733629"], ["updated_at", "2023-10-08 23:13:22.733629"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:13:22.736558"], ["updated_at", "2023-10-08 23:13:22.736558"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.1ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:13:22.738209"], ["updated_at", "2023-10-08 23:13:22.738209"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:13:22.739232"], ["updated_at", "2023-10-08 23:13:22.739232"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.1ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:13:22.740137"], ["updated_at", "2023-10-08 23:13:22.740137"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mInbox Load (0.1ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" WHERE "inboxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_patient" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["is_patient", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Luke"], ["last_name", "Skywalker"], ["created_at", "2023-10-08 23:13:22.746158"], ["updated_at", "2023-10-08 23:13:22.746158"]]
+  [1m[36mInbox Create (0.1ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mOutbox Create (0.1ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 4]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_doctor", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_doctor", 1], ["first_name", "Leia"], ["last_name", "Organa"], ["created_at", "2023-10-08 23:13:22.747628"], ["updated_at", "2023-10-08 23:13:22.747628"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("is_patient", "is_admin", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_patient", 0], ["is_admin", 1], ["first_name", "Obi-wan"], ["last_name", "Kenobi"], ["created_at", "2023-10-08 23:13:22.748819"], ["updated_at", "2023-10-08 23:13:22.748819"]]
+  [1m[36mInbox Create (0.0ms)[0m  [1m[32mINSERT INTO "inboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mOutbox Create (0.0ms)[0m  [1m[32mINSERT INTO "outboxes" ("user_id") VALUES (?)[0m  [["user_id", 6]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("body", "outbox_id", "inbox_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "Thanks for your order."], ["outbox_id", 5], ["inbox_id", 4], ["created_at", "2023-10-08 23:13:22.749605"], ["updated_at", "2023-10-08 23:13:22.749605"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOutbox Load (0.0ms)[0m  [1m[34mSELECT "outboxes".* FROM "outboxes" WHERE "outboxes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."is_doctor" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["is_doctor", 1], ["LIMIT", 1]]
+  [1m[36mInbox Load (0.0ms)[0m  [1m[34mSELECT "inboxes".* FROM "inboxes" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
