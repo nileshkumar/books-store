@@ -1,4 +1,5 @@
 class Mutations::CreateBook < Mutations::BaseMutation
+  description "creates a book"
   argument :title, String, required: true
   argument :author, String, required: true
   argument :publication_date, GraphQL::Types::ISO8601Date, required: true
