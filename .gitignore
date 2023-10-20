@@ -1,2 +1,7 @@
-log
-tmp
+/.bundle
+/vendor/bundle/
+/vendor/ruby/
+/log/*
+/tmp/*
+/spec/tmp/*
+/cache
