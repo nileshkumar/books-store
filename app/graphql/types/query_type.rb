@@ -21,11 +21,25 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
-    # TODO: remove me
-    field :test_field, String, null: false,
-      description: "An example field added by the generator"
-    def test_field
-      "Hello World!"
+    field :current_user, UserType, null: true do
+      description "The signed in user"
+    end
+
+    field :books, [BookType], null: true
+    field :book, BookType, null: false do
+    argument :id, ID, required: true
+    end
+
+    def books
+    Book.all
+    end
+
+    def book(id:)
+    Book.find(id)
+    end
+
+    def current_user
+    context[:current_user]
     end
   end
 end
