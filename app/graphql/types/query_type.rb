@@ -22,6 +22,10 @@ module Types
       description "The signed in user"
     end
 
+    field :search, [BookType], null: true, description: "Search result" do
+      argument :search_term, String, required: true
+    end
+
     field :books, [BookType], null: true
     field :book, BookType, null: false do
       argument :id, ID, required: true
@@ -35,8 +39,14 @@ module Types
       Book.preload(:user).where(id: id, user_id: current_user).first
     end
 
+    def search(search_term:)
+      Book.where("LOWER(title) like ? OR LOWER(author) like ?",
+        "%#{search_term.downcase}%", "%#{search_term.downcase}%")
+    end
+
     def current_user
       context[:current_user]
     end
   end
 end
+
