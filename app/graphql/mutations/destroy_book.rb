@@ -24,3 +24,11 @@ module Mutations
     end
   end
 end
+
+=begin
+mutation{
+  destroyBook(input:{id: 2}){
+    id
+  }
+}
+=end

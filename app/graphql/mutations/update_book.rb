@@ -28,3 +28,12 @@ module Mutations
     end
   end
 end
+
+=begin
+mutation{
+  updateBook(input:{id: 2, title: "test"}) {
+    id
+    title
+  }
+  }
+=end

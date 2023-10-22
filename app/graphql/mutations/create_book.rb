@@ -24,3 +24,19 @@ class Mutations::CreateBook < Mutations::BaseMutation
     end
   end
 end
+
+
+=begin
+mutation{
+  createBook(input: {
+    title: "Jurrasic Park",
+    publicationDate: "2020-02-01",
+    author: "Mark Spencer"
+  }) {
+    book{
+      title
+      author
+    }
+  }
+}
+=end

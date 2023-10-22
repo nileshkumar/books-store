@@ -23848,3 +23848,892 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 4.3ms | Allocations: 8202)
 
 
+Started GET "/graphql" for ::1 at 2023-10-22 23:26:24 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 6.2ms | Allocations: 10164)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 11866)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:26:24 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+uninitialized constant Resolvers::LinksSearch
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:25:in `<class:QueryType>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:4:in `<module:Types>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:3:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/books_store_schema.rb:5:in `<class:BooksStoreSchema>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/books_store_schema.rb:3:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/base.rb:228:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-6.1.7.6/lib/action_text/rendering.rb:20:in `with_renderer'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-6.1.7.6/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:126:in `instance_exec'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:137:in `run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications.rb:203:in `block in instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications.rb:203:in `instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.7.6/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/base.rb:165:in `process'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionview-6.1.7.6/lib/action_view/rendering.rb:39:in `process'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal.rb:190:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal.rb:254:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:842:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/conditional_get.rb:40:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/cookies.rb:697:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.7.6/lib/active_record/migration.rb:601:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:132:in `call_app'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:28:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:17:in `catch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:17:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:37:in `call_app'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:37:in `tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:99:in `tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/static.rb:24:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/engine.rb:539:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Completed 500 Internal Server Error in 38ms (Views: 0.4ms | ActiveRecord: 7.0ms | Allocations: 22075)
+
+
+Started GET "/graphql" for ::1 at 2023-10-22 23:26:40 +0200
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 90.9ms | Allocations: 289715)
+Completed 200 OK in 98ms (Views: 93.3ms | ActiveRecord: 0.0ms | Allocations: 295580)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:26:40 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (32.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+uninitialized constant Resolvers::LinksSearch
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:25:in `<class:QueryType>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:4:in `<module:Types>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:3:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/books_store_schema.rb:5:in `<class:BooksStoreSchema>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/books_store_schema.rb:3:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/base.rb:228:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-6.1.7.6/lib/action_text/rendering.rb:20:in `with_renderer'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-6.1.7.6/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:126:in `instance_exec'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:137:in `run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications.rb:203:in `block in instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications.rb:203:in `instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.7.6/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/base.rb:165:in `process'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionview-6.1.7.6/lib/action_view/rendering.rb:39:in `process'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal.rb:190:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal.rb:254:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:842:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/conditional_get.rb:40:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/cookies.rb:697:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.7.6/lib/active_record/migration.rb:601:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:132:in `call_app'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:28:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:17:in `catch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:17:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:37:in `call_app'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:37:in `tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:99:in `tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/static.rb:24:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/engine.rb:539:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Completed 500 Internal Server Error in 62ms (Views: 0.4ms | ActiveRecord: 40.9ms | Allocations: 33448)
+
+
+Started GET "/graphql" for ::1 at 2023-10-22 23:26:41 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 5.5ms | Allocations: 10059)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 11571)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:26:41 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms | Allocations: 3419)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started GET "/graphql" for ::1 at 2023-10-22 23:26:43 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 5.1ms | Allocations: 10095)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 11622)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:26:43 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 3380)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started POST "/graphql" for ::1 at 2023-10-22 23:26:46 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"query{\n book(id: 3){\n  title\n}\n}", "graphql"=>{"query"=>"query{\n book(id: 3){\n  title\n}\n}"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 3444)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started GET "/graphql" for ::1 at 2023-10-22 23:27:16 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 4.9ms | Allocations: 10080)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 11603)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:27:16 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 3379)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started GET "/graphql" for ::1 at 2023-10-22 23:27:40 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 6.0ms | Allocations: 10079)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 11595)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:27:40 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms | Allocations: 3365)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started POST "/graphql" for ::1 at 2023-10-22 23:27:53 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"query{\n books{\n  id\n}\n}", "graphql"=>{"query"=>"query{\n books{\n  id\n}\n}"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 3425)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started GET "/graphql" for ::1 at 2023-10-22 23:28:36 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 4.0ms | Allocations: 10164)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 11874)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:28:36 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Resolvers::BookSearch should inherit from GraphQL::Schema::Resolver. Current ancestors [Resolvers::BookSearch, SearchObject::Plugin::Graphql, SearchObject::Base, #<Module:0x000000014f9a1e38>, ActiveSupport::ForkTracker::CoreExtPrivate, ActiveSupport::ForkTracker::CoreExt, ActiveSupport::ToJsonWithActiveSupportEncoder, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Dependencies::Loadable, ActiveSupport::Tryable, ActiveSupport::ForkTracker::CoreExtPrivate, ActiveSupport::ForkTracker::CoreExt, Kernel, BasicObject]
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object_graphql-1.0.5/lib/search_object/plugin/graphql.rb:7:in `included'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object.rb:21:in `include'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object.rb:21:in `block (2 levels) in module'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object.rb:21:in `each'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object.rb:21:in `block in module'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object/helper.rb:46:in `class_eval'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object/helper.rb:46:in `block (2 levels) in define_module'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/resolvers/book_search.rb:6:in `include'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/resolvers/book_search.rb:6:in `<class:BookSearch>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/resolvers/book_search.rb:4:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `block in load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:715:in `new_constants_in'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:522:in `load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:419:in `block in require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `block in load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:402:in `require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:558:in `load_missing_constant'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:213:in `const_missing'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:25:in `<class:QueryType>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:4:in `<module:Types>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:3:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `block in load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:715:in `new_constants_in'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:522:in `load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:419:in `block in require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `block in load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:402:in `require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:558:in `load_missing_constant'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:213:in `const_missing'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/books_store_schema.rb:5:in `<class:BooksStoreSchema>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/books_store_schema.rb:3:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `block in load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:715:in `new_constants_in'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:522:in `load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:419:in `block in require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `block in load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:402:in `require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:558:in `load_missing_constant'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:213:in `const_missing'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:595:in `load_missing_constant'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:213:in `const_missing'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/base.rb:228:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-6.1.7.6/lib/action_text/rendering.rb:20:in `with_renderer'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-6.1.7.6/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:126:in `instance_exec'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:137:in `run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications.rb:203:in `block in instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications.rb:203:in `instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.7.6/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/base.rb:165:in `process'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionview-6.1.7.6/lib/action_view/rendering.rb:39:in `process'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal.rb:190:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal.rb:254:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:842:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/conditional_get.rb:40:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/cookies.rb:697:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.7.6/lib/active_record/migration.rb:601:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:132:in `call_app'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:28:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:17:in `catch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:17:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:37:in `call_app'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:37:in `tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:99:in `tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/static.rb:24:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/engine.rb:539:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Completed 500 Internal Server Error in 26ms (Views: 0.6ms | ActiveRecord: 3.5ms | Allocations: 17182)
+
+
+Started GET "/graphql" for ::1 at 2023-10-22 23:28:38 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 4.3ms | Allocations: 10038)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 11542)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:28:38 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 3378)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started POST "/graphql" for ::1 at 2023-10-22 23:28:40 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"query{\n books{\n  id\n}\n}", "graphql"=>{"query"=>"query{\n books{\n  id\n}\n}"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 3425)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started POST "/graphql" for ::1 at 2023-10-22 23:28:41 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"query{\n books{\n  id\n}\n}", "graphql"=>{"query"=>"query{\n books{\n  id\n}\n}"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 3425)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started GET "/graphql" for ::1 at 2023-10-22 23:28:54 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 4.3ms | Allocations: 10079)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 11595)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:28:54 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 3365)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started GET "/graphql" for ::1 at 2023-10-22 23:30:01 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 127.7ms | Allocations: 289715)
+Completed 200 OK in 136ms (Views: 130.4ms | ActiveRecord: 0.0ms | Allocations: 295580)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:30:01 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Resolvers::BookSearch should inherit from GraphQL::Schema::Resolver. Current ancestors [Resolvers::BookSearch, SearchObject::Plugin::Graphql, SearchObject::Base, #<Module:0x00000001120dbf48>, ActiveSupport::ForkTracker::CoreExtPrivate, ActiveSupport::ForkTracker::CoreExt, ActiveSupport::ToJsonWithActiveSupportEncoder, Object, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Dependencies::Loadable, ActiveSupport::Tryable, ActiveSupport::ForkTracker::CoreExtPrivate, ActiveSupport::ForkTracker::CoreExt, Kernel, BasicObject]
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object_graphql-1.0.5/lib/search_object/plugin/graphql.rb:7:in `included'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object.rb:21:in `include'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object.rb:21:in `block (2 levels) in module'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object.rb:21:in `each'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object.rb:21:in `block in module'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object/helper.rb:46:in `class_eval'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/search_object-1.2.5/lib/search_object/helper.rb:46:in `block (2 levels) in define_module'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/resolvers/book_search.rb:6:in `include'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/resolvers/book_search.rb:6:in `<class:BookSearch>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/resolvers/book_search.rb:4:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `block in load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:715:in `new_constants_in'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:522:in `load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:419:in `block in require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `block in load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:402:in `require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:558:in `load_missing_constant'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:213:in `const_missing'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:25:in `<class:QueryType>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:4:in `<module:Types>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:3:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `block in load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:715:in `new_constants_in'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:522:in `load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:419:in `block in require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `block in load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:402:in `require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:558:in `load_missing_constant'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:213:in `const_missing'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/books_store_schema.rb:5:in `<class:BooksStoreSchema>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/books_store_schema.rb:3:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:523:in `block in load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:715:in `new_constants_in'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:522:in `load_file'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:419:in `block in require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `block in load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:39:in `load_interlock'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:402:in `require_or_load'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:558:in `load_missing_constant'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:213:in `const_missing'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:595:in `load_missing_constant'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies.rb:213:in `const_missing'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/base.rb:228:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-6.1.7.6/lib/action_text/rendering.rb:20:in `with_renderer'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-6.1.7.6/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:126:in `instance_exec'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:137:in `run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications.rb:203:in `block in instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications.rb:203:in `instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.7.6/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/base.rb:165:in `process'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionview-6.1.7.6/lib/action_view/rendering.rb:39:in `process'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal.rb:190:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal.rb:254:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:842:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/conditional_get.rb:40:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/cookies.rb:697:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.7.6/lib/active_record/migration.rb:601:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:132:in `call_app'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:28:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:17:in `catch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:17:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:37:in `call_app'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:37:in `tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:99:in `tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/static.rb:24:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/engine.rb:539:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Completed 500 Internal Server Error in 96ms (Views: 0.6ms | ActiveRecord: 63.0ms | Allocations: 18832)
+
+
+Started GET "/graphql" for ::1 at 2023-10-22 23:30:34 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 6.5ms | Allocations: 10180)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 11895)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:30:34 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 2.6ms | ActiveRecord: 15.2ms | Allocations: 34788)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:30:59 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"query{\n  book(id:1){\n    title\n  }\n}", "graphql"=>{"query"=>"query{\n  book(id:1){\n    title\n  }\n}"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 AND "books"."user_id" = $2 ORDER BY "books"."id" ASC LIMIT $3[0m  [["id", 1], ["user_id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 5.1ms | Allocations: 11183)
+
+
+Started GET "/graphql" for ::1 at 2023-10-22 23:48:22 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 4.2ms | Allocations: 10165)
+Completed 200 OK in 5ms (Views: 4.6ms | Allocations: 11870)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:48:22 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 14.8ms | Allocations: 20271)
+
+
+  
+LoadError (Unable to autoload constant Types::BaseObject, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/base_object.rb to define it):
+  
+app/graphql/types/query_type.rb:4:in `<module:Types>'
+app/graphql/types/query_type.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:45:in `message'
+app/controllers/graphql_controller.rb:45:in `handle_error_in_development'
+app/controllers/graphql_controller.rb:19:in `rescue in execute'
+app/controllers/graphql_controller.rb:8:in `execute'
+Started POST "/graphql" for ::1 at 2023-10-22 23:48:25 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"query{\n  book(id:1){\n    title\n  }\n}", "graphql"=>{"query"=>"query{\n  book(id:1){\n    title\n  }\n}"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 2939)
+
+
+  
+LoadError (Unable to autoload constant Types::MutationType, expected /Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/mutation_type.rb to define it):
+  
+app/graphql/books_store_schema.rb:4:in `<class:BooksStoreSchema>'
+app/graphql/books_store_schema.rb:3:in `<top (required)>'
+app/controllers/graphql_controller.rb:15:in `execute'
+Started GET "/graphql" for ::1 at 2023-10-22 23:51:04 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 4.5ms | Allocations: 10165)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 11876)
+
+
+Started POST "/graphql" for ::1 at 2023-10-22 23:51:04 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+uninitialized constant Resolvers::BookSearch
+Did you mean?  BooksStore
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:25:in `<class:QueryType>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:4:in `<module:Types>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/types/query_type.rb:3:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/books_store_schema.rb:5:in `<class:BooksStoreSchema>'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/graphql/books_store_schema.rb:3:in `<top (required)>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:14:in `block in loading'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/concurrency/share_lock.rb:151:in `exclusive'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/dependencies/interlock.rb:13:in `loading'
+/Users/nileshkumar/rails-test/code-challenge-nileshkumar/app/controllers/graphql_controller.rb:15:in `execute'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/base.rb:228:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-6.1.7.6/lib/action_text/rendering.rb:20:in `with_renderer'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-6.1.7.6/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:126:in `instance_exec'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:137:in `run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/callbacks.rb:41:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/rescue.rb:22:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications.rb:203:in `block in instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/notifications.rb:203:in `instrument'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.7.6/lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/abstract_controller/base.rb:165:in `process'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionview-6.1.7.6/lib/action_view/rendering.rb:39:in `process'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal.rb:190:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_controller/metal.rb:254:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:33:in `serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:32:in `each'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/journey/router.rb:32:in `serve'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/routing/route_set.rb:842:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/conditional_get.rb:40:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/cookies.rb:697:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activerecord-6.1.7.6/lib/active_record/migration.rb:601:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:132:in `call_app'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:28:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:17:in `catch'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/web-console-4.2.1/lib/web_console/middleware.rb:17:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:37:in `call_app'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:26:in `block in call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:37:in `tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/tagged_logging.rb:99:in `tagged'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/rack/logger.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/activesupport-6.1.7.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/static.rb:24:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionpack-6.1.7.6/lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.7.6/lib/rails/engine.rb:539:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+/Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Completed 500 Internal Server Error in 33ms (Views: 0.4ms | ActiveRecord: 8.0ms | Allocations: 18319)
+
+
+Started GET "/graphql" for ::1 at 2023-10-23 00:14:55 +0200
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/nileshkumar/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/graphiql-rails-1.9.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 7.1ms | Allocations: 10165)
+Completed 200 OK in 8ms (Views: 7.6ms | Allocations: 11870)
+
+
+Started POST "/graphql" for ::1 at 2023-10-23 00:14:55 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "operationName"=>"IntrospectionQuery"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 154ms (Views: 9.7ms | ActiveRecord: 42.4ms | Allocations: 37189)
+
+
+Started POST "/graphql" for ::1 at 2023-10-23 00:14:57 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"query{\n  book(id:1){\n    title\n  }\n}", "graphql"=>{"query"=>"query{\n  book(id:1){\n    title\n  }\n}"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 AND "books"."user_id" = $2 ORDER BY "books"."id" ASC LIMIT $3[0m  [["id", 1], ["user_id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 11.0ms | Allocations: 8288)
+
+
+Started POST "/graphql" for ::1 at 2023-10-23 00:17:04 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nquery{\n  books{\n    id\n    title\n  }\n}", "graphql"=>{"query"=>"\n\nquery{\n  books{\n    id\n    title\n  }\n}"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 2671)
+
+
+Started POST "/graphql" for ::1 at 2023-10-23 00:17:40 +0200
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nquery{\n  book(id:1){\n    title\n  }\n}", "graphql"=>{"query"=>"\n\nquery{\n  book(id:1){\n    title\n  }\n}"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 AND "books"."user_id" = $2 ORDER BY "books"."id" ASC LIMIT $3[0m  [["id", 1], ["user_id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 2566)
+
+
