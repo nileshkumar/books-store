@@ -5,7 +5,6 @@ module Mutations
     def ready?(**_args)
       check_current_user
     end
-
     description "update a given book"
     argument :id, ID, required: true
     argument :title, String, required: false

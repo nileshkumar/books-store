@@ -18,9 +18,6 @@ module Types
       ids.map { |id| context.schema.object_from_id(id, context) }
     end
 
-    # Add root-level fields here.
-    # They will be entry points for queries on your schema.
-
     field :current_user, UserType, null: true do
       description "The signed in user"
     end
@@ -31,11 +28,11 @@ module Types
     end
 
     def books
-      current_user.nil? ? [] : current_user.books
+      Book.preload(:user).where(user_id: current_user)
     end
 
     def book(id:)
-      current_user.nil? ? nil : current_user.books.where(id: id).first
+      Book.preload(:user).where(id: id, user_id: current_user).first
     end
 
     def current_user
