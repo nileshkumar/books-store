@@ -1,4 +1,8 @@
 class Mutations::CreateBook < Mutations::BaseMutation
+  def ready?(**_args)
+    check_current_user
+  end
+
   description "creates a book"
   argument :title, String, required: true
   argument :author, String, required: true

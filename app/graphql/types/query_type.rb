@@ -27,19 +27,19 @@ module Types
 
     field :books, [BookType], null: true
     field :book, BookType, null: false do
-    argument :id, ID, required: true
+      argument :id, ID, required: true
     end
 
     def books
-    Book.all
+      current_user.nil? ? [] : current_user.books
     end
 
     def book(id:)
-    Book.find(id)
+      current_user.nil? ? nil : current_user.books.where(id: id).first
     end
 
     def current_user
-    context[:current_user]
+      context[:current_user]
     end
   end
 end

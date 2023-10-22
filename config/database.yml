@@ -11,11 +11,11 @@ default: &default
 
 development:
   <<: *default
-  database: coding_challenge_development
+  database: books_db
 
 test:
   <<: *default
-  database: coding_challenge_test
+  database: books_db_test
 
 production:
   <<: *default

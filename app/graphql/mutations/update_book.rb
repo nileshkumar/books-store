@@ -2,6 +2,10 @@
 
 module Mutations
   class UpdateBook < BaseMutation
+    def ready?(**_args)
+      check_current_user
+    end
+
     description "update a given book"
     argument :id, ID, required: true
     argument :title, String, required: false
@@ -11,8 +15,12 @@ module Mutations
     type Types::BookType
 
     def resolve(id:, **attributes)
+      book = Book.find(id)
+      if book.user != context[:current_user]
+        raise GraphQL::ExecutionError, "You are not authorized!"
+      end
       begin
-        Book.find(id).tap do |book|
+        book.tap do |book|
           book.update!(attributes)
         end
       rescue
