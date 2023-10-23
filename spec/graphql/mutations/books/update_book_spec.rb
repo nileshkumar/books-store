@@ -6,7 +6,12 @@ module Mutations
       describe 'resolve' do
         it 'updates a book' do
           book   = create(:book)
-          post '/graphql', params: { query: query(id: book.id) }
+
+          BooksStoreSchema.execute(
+            query(id: book.id),
+            context: { current_user: book.user },
+            variables: {}
+          )
 
           expect(book.reload).to have_attributes(
             'id'    => book.id,
@@ -16,12 +21,15 @@ module Mutations
 
         it 'returns a book' do
           book   = create(:book, title: 'Hero')
-          post '/graphql', params: { query: query(id: book.id) }
+          data = BooksStoreSchema.execute(
+            query(id: book.id),
+            context: { current_user: book.user },
+            variables: {}
+          )
 
-          json = JSON.parse(response.body)
-          data = json['data']['updateBook']
+          result = data.dig("data", "updateBook")
 
-          expect(data).to include(
+          expect(result).to include(
             'id'              => book.id.to_s,
             'title'           => 'New Book',
           )
@@ -31,10 +39,10 @@ module Mutations
       def query(id:)
         <<~GQL
           mutation {
-            updateBook(
+            updateBook(input: {
               id: #{id}
               title: "New Book"
-            )
+            })
             {
               id
               title

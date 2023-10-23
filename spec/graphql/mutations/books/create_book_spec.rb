@@ -4,18 +4,26 @@ module Mutations
   module Books
     RSpec.describe CreateBook, type: :request do
       describe '.resolve' do
+        let(:user) { create(:user) }
         it 'creates a book' do
           expect do
-            post '/graphql', params: { query: query }
+            BooksStoreSchema.execute(
+            query,
+            context: { current_user: user },
+            variables: {}
+          )
           end.to change { Book.count }.by(1)
         end
 
         it 'returns a book' do
-          post '/graphql', params: { query: query }
-          json = JSON.parse(response.body)
-          data = json['data']['createBook']['book']
+          data = BooksStoreSchema.execute(
+            query,
+            context: { current_user: user },
+            variables: {}
+          )
+          result = data.dig("data", "createBook", "book")
 
-          expect(data).to eq(
+          expect(result).to eq(
             'author' => "Mark Spencer",
             'title'  => 'Jurrasic Park',
           )

@@ -7,7 +7,7 @@ module Mutations
     end
 
     description "deletes a book"
-    argument :id, Integer, required: true
+    argument :id, ID, required: true
 
     type Types::BookType
 
@@ -17,7 +17,7 @@ module Mutations
         raise GraphQL::ExecutionError, "You are not authorized!"
       end
       begin
-        book.destroy!
+        book.destroy
       rescue GraphQL::ExecutionError => e
         e.record.errors.full_messages.join(', ')
       end

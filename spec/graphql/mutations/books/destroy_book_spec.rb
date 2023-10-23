@@ -8,7 +8,11 @@ module Mutations
           book = create(:book)
 
           expect do
-            post '/graphql', params: { query: query(id: book.id) }
+            BooksStoreSchema.execute(
+            query(id: book.id),
+            context: { current_user: book.user },
+            variables: {}
+          )
           end.to change { Book.count }.by(-1)
         end
 
@@ -20,7 +24,7 @@ module Mutations
           data = json['data']['destroyBook']
 
           expect(data).to include(
-            'id'              => book.id,
+            'id' => book.id,
           )
         end
       end

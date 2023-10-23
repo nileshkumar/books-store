@@ -24901,3 +24901,62 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 7189)
 
 
+Started DELETE "/users/sign_out" for ::1 at 2023-10-23 01:15:01 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uhykWaCzRIi24uyMflQPDelG2RpiaRJlEpRqgsdLBmA4B0h4QDk0tUBDN/fNeNMqCn6TJIfWqa1O6YiMMO+DVQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 29ms (ActiveRecord: 7.8ms | Allocations: 11563)
+
+
+Started GET "/" for ::1 at 2023-10-23 01:15:01 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 295)
+  Rendered navigation/_header.html.erb (Duration: 0.6ms | Allocations: 469)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 18207)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 20763)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-10-23 01:15:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 3530)
+  Rendered navigation/_header.html.erb (Duration: 0.3ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 19270)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.0ms | Allocations: 22698)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-10-23 01:15:10 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 188)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2036)
+  Rendered navigation/_header.html.erb (Duration: 0.2ms | Allocations: 200)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 17684)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 20257)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-10-23 01:15:20 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1147)
+  Rendered navigation/_header.html.erb (Duration: 0.2ms | Allocations: 163)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 17294)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 19006)
+
+
+Started GET "/" for ::1 at 2023-10-23 01:15:22 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 74)
+  Rendered navigation/_header.html.erb (Duration: 0.7ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 15601)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 16972)
+
+
